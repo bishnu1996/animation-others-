@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wheel{
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            border-radius: 50%;
+            text-align: center;
+            color: #ffffff;
+            line-height: 200px;
+            font-size: 30px;
+            font-weight: 600;
+            font-style: italic;
+            animation: rotate 1s linear infinite;
+            animation-direction: alternate;
+        }
+        hr{
+            margin-top: 0px;
+        }
+        @keyframes rotate {
+            from {
+                transform: translateX(0) rotate(0deg);
+            }
+            to{
+                transform: translateX(85vw) rotateX(720deg) ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wheel">
+        <span>Rotate me</span>
+    </div>
+    <hr>
+</body>
+</html>
