@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            background-color: tomato;
+            font-variant: normal;
+            font-size: 20px;
+            font-style: normal;
+            text-align: center;
+            color: #ffffff;
+            line-height: 200px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: rotate 10s linear infinite;
+            animation-direction: alternate;
+        }
+        hr{
+            margin-top: 0px;
+        }
+        @keyframes rotate {
+            from{
+                transform: translateX(0) rotate(0deg);
+            }
+            to{
+                transform: translate(1200px) rotate(720deg);
+            }
+        }
+        @keyframes rotate {
+            0%{
+                background-color: violet;
+                transform: translateX(0) rotate(0deg);
+            }
+            25%{
+                background-color: teal;
+            }
+            50%{
+                background-color: cadetblue;
+            }
+            75%{
+                background-color: seagreen;
+            }
+            100%{
+                background-color: salmon;
+                transform: translate(1200px) rotate(720deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>bishnu mishra</span>
+    </div>
+    <hr>
+</body>
+</html>
